@@ -1,0 +1,20 @@
+%h1
+  = "#{comparator.query_number}. #{I18n.t(comparator.query_number)}: "
+  - if comparator.result
+    %strong.green Passed
+  - else
+    %strong.red Failed
+
+- unless comparator.result
+  %div.query-block
+    %h3 Test Query
+    %div.query= comparator.test_query
+    = render partial: 'query_error', locals: { error: comparator.query_errors[:test] }
+    = render partial: 'query_result', locals: { query_result: comparator.test_query_result }
+  %div.query-block
+    %h3 Standart Query
+    %div.query= comparator.standart_query
+    = render partial: 'query_error', locals: { error: comparator.query_errors[:standart] }
+    = render partial: 'query_result', locals: { query_result: comparator.standart_query_result }
+%br
+%hr

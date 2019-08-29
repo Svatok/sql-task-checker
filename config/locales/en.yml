@@ -1,0 +1,40 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  1: get all statuses, not repeating, alphabetically ordered
+  2: get the count of all tasks in each project, order by tasks count descending
+  3: get the count of all tasks in each project, order by projects names
+  4: get the tasks for all projects having the name beginning with "N" letter
+  5: get the list of all projects containing the 'a' letter in the middle of the name, and show the tasks count near each project. Mention that there can exist projects without tasks and tasks with project_id = NULL
+  6: get the list of tasks with duplicate names. Order alphabetically
+  7: get list of tasks having several exact matches of both name and status, from the project 'Garage'. Order by matches count
+  8: get the list of project names having more than 10 tasks in status 'completed'. Order by project_id

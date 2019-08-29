@@ -1,0 +1,4 @@
+= form_tag query_check_path, method: :post do
+  = text_area_tag 'queries', @queries, class: 'queries-text-area'
+  %br
+  = submit_tag 'Check queries'

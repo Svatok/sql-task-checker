@@ -1,0 +1,10 @@
+- if query_result
+  %table.query-result-table
+    %tbody
+      %tr
+        - query_result.columns.each do |column|
+          %th= column
+      - query_result.rows.each do |row|
+        %tr
+          - row.each do |value|
+            %td= value
