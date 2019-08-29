@@ -29,13 +29,18 @@ Project.create(name: 'For Work') do |project|
   project.tasks.build(name: 'Sleep', status: 'completed')
 end
 
-Project.create(name: 'Never use') do |project|
+Project.create(name: 'never use') do |project|
   project.tasks.build(name: 'Copy pasting', status: 'pending')
   project.tasks.build(name: 'Unsupported libraries', status: 'completed')
   project.tasks.build(name: 'Sleep', status: 'completed')
 end
 
-Project.create(name: 'Bla bla') do |project|
+Project.create(name: 'New project') do |project|
+  project.tasks.build(name: 'new task', status: 'pending')
+  project.tasks.build(name: 'task new', status: 'completed')
+end
+
+Project.create(name: 'Blo bla') do |project|
   project.tasks.build(name: 'Do something', status: 'pending')
   project.tasks.build(name: 'Sleep', status: 'completed')
   project.tasks.build(name: 'Run', status: 'completed')
@@ -85,3 +90,11 @@ Project.create(name: 'Garage') do |project|
   project.tasks.build(name: 'Complete10', status: 'completed')
   project.tasks.build(name: 'Never do this', status: 'completed')
 end
+
+Project.create(name: 'Ko no') do |project|
+  project.tasks.build(name: 'a', status: 'pending')
+  project.tasks.build(name: 'b', status: 'completed')
+  project.tasks.build(name: 'c', status: 'completed')
+end
+
+Project.create(name: 'abcdf')
